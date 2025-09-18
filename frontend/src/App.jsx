@@ -9,7 +9,8 @@ function App() {
 
   const fetchTasks = async () => {
     const res = await axios.get(API);
-    setTasks(res.data);
+    const { tasks } = res.data;
+    setTasks(tasks);y
   };
 
   const addTask = async () => {
