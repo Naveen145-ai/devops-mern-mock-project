@@ -7,7 +7,7 @@
     "supertest": "^7.1.4"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand --verbose --testEnvironment=node",
     "prod": "node index.js"
   },
   "devDependencies": {
